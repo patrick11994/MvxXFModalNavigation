@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvx:MvxContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    Title="Screen C"
+    x:Class="MvxXFModalNavigation.Views.ScreenCView">
+    <ContentPage.Content>
+        <StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Label
+                Text="Screen"
+                FontSize="40"
+                HorizontalTextAlignment="Center" />
+            <Label
+                Text="C"
+                FontSize="70"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center" />
+            <Button
+                Text="Navigate to screen D"
+                Command="{Binding NavigateToScreenDCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</mvx:MvxContentPage>

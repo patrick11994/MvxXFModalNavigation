@@ -13,7 +13,7 @@ namespace MvxXFModalNavigation.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<HomeViewModel>();
+            RegisterAppStart<ScreenAViewModel>();
         }
     }
 }

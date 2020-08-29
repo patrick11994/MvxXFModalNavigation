@@ -4,9 +4,9 @@ using Xamarin.Forms.Xaml;
 namespace MvxXFModalNavigation.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomeView : MvxContentPage
+    public partial class ScreenDView : MvxContentPage
     {
-        public HomeView()
+        public ScreenDView()
         {
             InitializeComponent();
         }
