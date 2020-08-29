@@ -9,8 +9,10 @@ namespace MvxXFModalNavigation.Core.ViewModels
         public ScreenCViewModel(IMvxNavigationService navigationService)
         {
             NavigateToScreenDCommand = new MvxCommand(() => navigationService.Navigate<ScreenDViewModel>());
+            CancelCommand = new MvxCommand(() => navigationService.Close(this));
         }
 
         public IMvxCommand NavigateToScreenDCommand { get; }
+        public MvxCommand CancelCommand { get; }
     }
 }

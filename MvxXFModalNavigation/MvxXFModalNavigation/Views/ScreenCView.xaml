@@ -5,6 +5,15 @@
     xmlns:mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
     Title="Screen C"
     x:Class="MvxXFModalNavigation.Views.ScreenCView">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="Cancel"
+            Order="Primary"
+            Priority="0"
+            Command="{Binding CancelCommand}" />
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
         <StackLayout
             HorizontalOptions="Center"
